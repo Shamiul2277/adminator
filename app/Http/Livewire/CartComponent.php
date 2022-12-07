@@ -4,11 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class ShopComponent extends Component
+class CartComponent extends Component
 {
     public function render()
     {
-
-        return view('livewire.shop-component');
+        return view('livewire.cart-component');
     }
 }
