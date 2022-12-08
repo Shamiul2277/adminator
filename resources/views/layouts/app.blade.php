@@ -99,7 +99,7 @@
             <div class="right-side float-left-xs header-right-link">
 
               <ul>
-              <li class="main-search">
+                <li class="main-search">
                   <div class="header_search_toggle desktop-view">
                     <form>
                       <div class="search-box">
@@ -110,30 +110,14 @@
                   </div>
                 </li>
 
-               <li class="cart-icon"> <a href="#"><span><i class="fa fa-shopping-cart"></i> <small class="cart-notification">0</small> </span> </a>
-                  <div class="cart-dropdown header-link-dropdown">
-                    <ul class="cart-list link-dropdown-list">
-                      <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
-                        <div class="media"> <a class="pull-left"> <img alt=" " src="{{ asset('assets/images/products/item-small-1.jpg')}}"></a>
-                          <div class="media-body"> <span><a>Summer Women Nice Cloth</a></span>
-                            <p class="cart-price">$29.99</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
-                        <div class="media"> <a class="pull-left"> <img alt=" " src="{{ asset('assets/images/products/item-small-2.jpg')}}"></a>
-                          <div class="media-body"> <span><a>Summer Women Nice Cloth</a></span>
-                            <p class="cart-price">$29.99</p>
-                          </div>
-                        </div>
-                      </li>
+                @livewire('header-cart-wish-component')
                     </ul>
                     <p class="cart-sub-totle"> <span class="pull-left">Cart Subtotal</span> <span class="pull-right"><strong class="price-box">$29.98</strong></span> </p>
                     <div class="clearfix"></div>
                     <div class="mt-20"> <a href="cart.html" class="btn-color btn">Cart</a> <a href="checkout.html" class="btn-color btn right-side">Checkout</a> </div>
                   </div>
                 </li>
-                <li class="account-icon"> <a href="#"><span><i class="fa fa-heart-o"></i></span></a></li>
+                {{--  <li class="account-icon"> <a href="#"><span><i class="fa fa-heart-o"></i></span></a></li>  --}}
               </ul>
             </div>
           </div>
@@ -305,143 +289,6 @@
   <!-- HEADER END -->
 
  {{$slot}}
-
-<!-- BOTTOM PRODUCT WIDGET  -->
-  <section class="pb-60 pb-xs-30">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="widget widget_products">
-            <div class="widget-title-wrap"><h5 class="widget-title">Products</h5></div>
-
-            <ul class="product_list_widget">
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-1.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-2.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-3.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                </div>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="widget widget_products">
-            <div class="widget-title-wrap"><h5 class="widget-title">Top Rated Products</h5></div>
-
-            <ul class="product_list_widget">
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-4.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                  <div class="item-rating">
-                   <div title="60%" class="rating-result"> <span style="width:60%"></span> </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-5.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                  <div class="item-rating">
-                   <div title="60%" class="rating-result"> <span style="width:60%"></span> </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-6.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                  <div class="item-rating">
-                   <div title="60%" class="rating-result"> <span style="width:60%"></span> </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <div class="widget widget_products">
-            <div class="widget-title-wrap"><h5 class="widget-title">Recent Reviews</h5></div>
-
-            <ul class="product_list_widget">
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-7.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                  <div class="item-rating">
-                   <div title="60%" class="rating-result"> <span style="width:60%"></span> </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-8.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                  <div class="item-rating">
-                   <div title="60%" class="rating-result"> <span style="width:60%"></span> </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <a href="#">
-                  <img width="70" height="85" src="{{ asset('assets/images/products/item-small-9.jpg')}}">
-                  <span class="product-title">Ecstasy Ladis Cloth</span>
-                </a>
-                <div class="price-box">
-                  <span class="price">$30.00</span> <del class="price old-price">$100.00</del>
-                  <div class="item-rating">
-                   <div title="60%" class="rating-result"> <span style="width:60%"></span> </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- BOTTOM PRODUCT WIDGET -->
 
   <!-- FOOTER START -->
   <div class="footer">

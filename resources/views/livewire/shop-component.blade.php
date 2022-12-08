@@ -503,3 +503,6 @@
   </section>
   <!-- CONTAINER END -->
 </div>
+
+
+@livewire('footer-top-product-component')

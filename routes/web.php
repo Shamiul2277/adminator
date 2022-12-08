@@ -21,9 +21,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::middleware([
     'auth:sanctum',
@@ -37,11 +37,11 @@ Route::middleware([
 
 // Route::get('/show-wish-table',WishTableComponent::class)->name('wish.table');
 
-Route::get('/home', HomeComponent::class)->name('home');
+Route::get('/', HomeComponent::class)->name('home');
 Route::get('/shop', ShopComponent::class)->name('shop');
 Route::get('/products/{slug}', ProductDetailsComponent::class)->name('product.details');
 Route::get('/checkout', CheckoutComponent::class)->name('shop.checkout');
 Route::get('/cart', CartComponent::class)->name('shop.cart');
 Route::get('/product-category/{slug}', CategoryComponent::class)->name('product.category');
 Route::get('/search', SearchComponent::class)->name('product.search');
-Route::get('/shop', WishTableComponent::class)->name('wish.table');
+Route::get('/wish-list', WishTableComponent::class)->name('wish.table');
