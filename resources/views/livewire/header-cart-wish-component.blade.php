@@ -1,4 +1,4 @@
-<li class="cart-icon"> <a href="#"><span><i class="fa fa-shopping-cart"></i> <small class="cart-notification">0</small> </span> </a>
+<li class="cart-icon"> <a href="#"><span><i class="fa fa-shopping-cart"></i> <small class="cart-notification">{{ Cart::instance('cart')->count() }}</small> </span> </a>
     <div class="cart-dropdown header-link-dropdown">
       <ul class="cart-list link-dropdown-list">
         <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>
@@ -21,7 +21,7 @@
       <div class="mt-20"> <a href="cart.html" class="btn-color btn">Cart</a> <a href="checkout.html" class="btn-color btn right-side">Checkout</a> </div>
     </div>
   </li>
-  <li class="cart-icon"> <a href="#"><span><i class="fa fa-heart-o"></i> <small class="cart-notification">0</small> </span> </a>
+  <li class="cart-icon"> <a href="#"><span><i class="fa fa-heart-o"></i> <small class="cart-notification">{{ Cart::instance('wishlist')->count() }}</small> </span> </a>
     <div class="cart-dropdown header-link-dropdown">
       <ul class="cart-list link-dropdown-list">
         <li> <a class="close-cart"><i class="fa fa-times-circle"></i></a>

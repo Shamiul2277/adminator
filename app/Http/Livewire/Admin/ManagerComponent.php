@@ -8,6 +8,6 @@ class ManagerComponent extends Component
 {
     public function render()
     {
-        return view('livewire.admin.manager-component');
+        return view('livewire.admin.manager-component')->layout( 'layouts/admin' );
     }
 }

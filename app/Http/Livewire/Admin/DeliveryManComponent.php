@@ -8,6 +8,6 @@ class DeliveryManComponent extends Component
 {
     public function render()
     {
-        return view('livewire.admin.delivery-man-component');
+        return view('livewire.admin.delivery-man-component')->layout( 'layouts/admin' );
     }
 }

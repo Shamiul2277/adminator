@@ -8,6 +8,6 @@ class WorkerComponent extends Component
 {
     public function render()
     {
-        return view('livewire.admin.worker-component');
+        return view('livewire.admin.worker-component')->layout( 'layouts/admin' );
     }
 }
