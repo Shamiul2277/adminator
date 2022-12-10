@@ -20,6 +20,7 @@
   <!-- Vendor CSS Files -->
   <link href="{{ asset('admin-assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{ asset('admin-assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{ asset('assets/css/font-awesome.min.css')}}" rel="stylesheet">
   <link href="{{ asset('admin-assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
   <link href="{{ asset('admin-assets/vendor/quill/quill.snow.css')}}" rel="stylesheet">
   <link href="{{ asset('admin-assets/vendor/quill/quill.bubble.css')}}" rel="stylesheet">
@@ -29,12 +30,7 @@
   <!-- Template Main CSS File -->
   <link href="{{ asset('admin-assets/css/style.css')}}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin - v2.4.1
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 
   @livewireStyles
 </head>
